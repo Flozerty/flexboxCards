@@ -20,6 +20,15 @@
   background-color: white;
   margin: 10px;
   box-shadow: 0px 2px 10px rgb(83, 83, 83);
+  position: relative;
+  overflow: hidden;
+
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  transition: 0.3s;
+
 }
 
 .card-header {
@@ -33,10 +42,9 @@
   width: 100%;
   object-fit: cover;
   filter: grayscale(1);
-
 }
 
-.card-header img:hover {
+.card:hover img {
   filter: grayscale(0);
   transform: scale(1.1);
   transition: 0.3s;
@@ -49,8 +57,33 @@
 h1 {
   font-size: 25px;
   margin-bottom: 10px;
+  font-weight: 800;
 }
 
 .card-text p {
   font-size: 14px;
+  font-weight: 500;
+}
+
+.heart {
+  background-color: red;
+  color: white;
+  font-weight: 600;
+  bottom: 0;
+  height: 50px;
+  width: 50px;
+  position: absolute;
+  top: -50px;
+  left: -50px;
+  transition: 0.3s;
+  font-size: 2em;
+  border-radius: 0 0 10px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card:hover .heart {
+  left: 0;
+  top: 0;
 }
