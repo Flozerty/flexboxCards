@@ -10,7 +10,6 @@
   justify-content: center;
   align-items: center;
   background-color: rgba(68, 117, 136, 0.548);
-  justify-content: center;
   height: 100vh;
 }
 
@@ -22,13 +21,12 @@
   box-shadow: 0px 2px 10px rgb(83, 83, 83);
   position: relative;
   overflow: hidden;
-
+  transition: 0.3s;
 }
 
 .card:hover {
   transform: translateY(-5px);
   transition: 0.3s;
-
 }
 
 .card-header {
@@ -37,17 +35,17 @@
   border-radius: 10px 10px 0 0;
 }
 
-.card-header img {
+.card img {
   height: 100%;
   width: 100%;
   object-fit: cover;
   filter: grayscale(1);
+  transition: 0.3s;
 }
 
 .card:hover img {
   filter: grayscale(0);
   transform: scale(1.1);
-  transition: 0.3s;
 }
 
 .card-text {
@@ -57,12 +55,10 @@
 h1 {
   font-size: 25px;
   margin-bottom: 10px;
-  font-weight: 800;
 }
 
 .card-text p {
   font-size: 14px;
-  font-weight: 500;
 }
 
 .heart {
